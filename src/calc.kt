@@ -6,11 +6,14 @@ fun main() {
     var first = calculate.nextInt()
     println("enter the second number: ")
     var second = calculate.nextInt()
-    var operator = "*,+,-,/"
-    var op = calculate.next()[0]
-       var result : Double
+    println("Please enter an operator: + - * /")
+    var operator = readLine()
    when(operator){
-       "*" -> result = first * second
+       "+" -> println("The result is ${first + second}")
+       "-" -> println("The result is ${first - second}")
+       "*" -> println("The result is ${first * second}")
+       "/" -> println("The result is ${first / second}")
+       else -> println("Unknown operator")
 
    }
 
